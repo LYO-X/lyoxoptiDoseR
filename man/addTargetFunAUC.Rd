@@ -31,7 +31,7 @@ The area between state-curve and target function is calculated and penalized.
 warf_proj <- newOptiProject("Monolix") \%>\%
                   addPmxRun("../inst/warfarinPKPD_project.mlxtran",
                             lixoft_path = "C:/ProgramData/Lixoft/MonolixSuite2021R2") \%>\%
-                  addTargetFunAUC("R",target_fun = "100 \* exp(-0.2 \* t)", pen_time = c(0,30),
+                  addTargetFunAUC("R",target_fun = "100 * exp(-0.2 * t)", pen_time = c(0,30),
                                     eval_time = 50)
 }
 }
